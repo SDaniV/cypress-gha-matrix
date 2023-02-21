@@ -1,0 +1,12 @@
+{
+  "name": "cypress-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^12.6.0"
+  }
+}
