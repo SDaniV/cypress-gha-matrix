@@ -1,0 +1,13 @@
+{
+  "name": "@hosts/first-host",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "component:open": "cypress open",
+    "component:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^12.6.0"
+  }
+}
