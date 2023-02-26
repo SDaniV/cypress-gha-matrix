@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        host: [main]
+        host: [first-host, second-host]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -21,4 +21,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5 # use the explicit version number
         with:
-          start: npm run component:first-host-test
+          start: npm run component:${{ matrix.host }}
