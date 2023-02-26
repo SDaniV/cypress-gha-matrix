@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "component:open": "cypress open",
-    "component:first-host": "cd ./hosts/first-host && npm run-script component:run",
-    "component:second-host": "cd ./hosts/second-host && npm run-script component:run"
+    "component:first-host": "npm --prefix hosts/first-host run component:run",
+    "component:second-host": "npm --prefix hosts/second-host run component:run"
   },
   "devDependencies": {
     "cypress": "^12.6.0"
