@@ -16,13 +16,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          name: cypress-dist
-          path: hosts/first-host
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v5 # use the explicit version number
         with:
-          start: component:open
-          path: hosts/first-host
+          start: npm run component:first-host-test
