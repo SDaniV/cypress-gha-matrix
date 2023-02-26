@@ -10,10 +10,6 @@ jobs:
       matrix:
         host: [first-host, second-host]
 
-    defaults:
-      run:
-        working-directory: ./hosts/${{ matrix.host }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
